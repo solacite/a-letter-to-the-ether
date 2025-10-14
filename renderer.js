@@ -1,31 +1,17 @@
-const Chart = require('chart.js');
+window.onload = function() {
+  const { Chart, ArcElement, Tooltip, Legend } = require('chart.js');
+  Chart.register(ArcElement, Tooltip, Legend);
 
-const ctx = document.getElementById('productivityGraph').getContext('2d');
-const productivityChart = new Chart(ctx, {
-    type: 'doughnut',
-    data: {
-        labels: ['9am', '10am', '11am', '12pm'],
-        datasets: [{
-            label: 'Productive %',
-            data: [80, 60, 90, 75],
-            fill: false,
-            borderColor: 'green',
-            tension: 0.1
-        },
-        {
-            label: 'Unproductive %',
-            data: [20, 40, 10, 25],
-            fill: false,
-            borderColor: 'red',
-            tension: 0.1
-        }]
-    },
-    options: {
-        scales: {
-            y: {
-                beginAtZero: true,
-                max: 100
-            }
-        }
-    }
-});
+  console.log('renderer.js loaded!');
+  const ctx = document.getElementById('graph').getContext('2d');
+  const productivityChart = new Chart(ctx, {
+      type: 'doughnut',
+      data: {
+          labels: ['Productive', 'Unproductive'],
+          datasets: [{
+              data: [75, 25],
+              backgroundColor: ['green', 'red']
+          }]
+      }
+  });
+};
