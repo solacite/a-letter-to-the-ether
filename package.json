@@ -20,5 +20,8 @@
   "homepage": "https://github.com/solacite/a-letter-to-the-ether#readme",
   "devDependencies": {
     "electron": "^38.2.2"
+  },
+  "dependencies": {
+    "chart.js": "^4.5.1"
   }
 }
