@@ -1,0 +1,23 @@
+{
+  "name": "a-letter-to-the-ether",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solacite/a-letter-to-the-ether.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/solacite/a-letter-to-the-ether/issues"
+  },
+  "homepage": "https://github.com/solacite/a-letter-to-the-ether#readme",
+  "devDependencies": {
+    "electron": "^38.2.2"
+  }
+}
