@@ -1,0 +1,22 @@
+/* generic styling */
+
+body {
+    margin: 0; /* remove default margins */
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 10vh; /* full height of viewport */
+    align-items: center;
+    justify-content: center;
+    background: #222;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    border: white;
+    color: white;
+    background: none;
+}
+
