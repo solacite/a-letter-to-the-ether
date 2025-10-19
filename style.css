@@ -11,7 +11,7 @@ body {
 }
 
 button {
-    padding: 12px 20px;
+    padding: 12px 20px; /* increased padding for better click area */
     font-size: 16px;
     cursor: pointer;
     border-radius: 6px;
@@ -20,3 +20,17 @@ button {
     background: none;
 }
 
+/* pulse! */
+
+#pulse-overlay {
+    position: fixed; /* cover entire viewport */
+    inset: 0; /* cover entire viewport */
+    background: var(--pulse-color); /* use CSS variable for color */
+    opacity: 0; /* start invisible */
+    pointer-events: none; /* allow clicks through */
+    z-index: 9999; /* on top of everything */
+    will-change: opacity, transform; /* optimize for animation */
+    transform-origin: center center; /* scale from center */
+}
+
+@
