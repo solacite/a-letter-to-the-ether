@@ -10,11 +10,13 @@
     <p>idk yoppee
         anyway
     </p>
-    <button >wake up.</button>
-    <p>...</p>
-    <p>idk rly</p>
-    <p>yea...</p>
-    <p>yea!</p>
+
+    <!-- id is for javascript to find element, label tells what the button does to screen reader -->
+    <button id="pulse-btn" aria-label="pulse screen">wake up.</button>
+    <!-- full-screen overlay for flash, hidden bc it's deco -->
+    <div id="pulse-overlay" aria-hidden="true"></div>
+
+    <script src="renderer.js"></script>
 </body>
 
 </html>
