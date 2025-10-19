@@ -1,4 +1,7 @@
 {
+  "name": "a-letter-to-the-ether",
+  "version": "1.0.0",
+  "main": "main.js",
   "devDependencies": {
     "electron": "^38.3.0"
   },
