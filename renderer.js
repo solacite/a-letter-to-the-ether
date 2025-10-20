@@ -1,4 +1,4 @@
-const fullLetter = "i don't really know what's going on anymore, but i want to know. persistence seems daunting. futile, at times...but still i carry on. why shouldn't i?";
+const fullLetter = "i don't really know what's going on anymore, but i want to know. persistence seems daunting. futile, at times...but still i carry on. why shouldn't i? ...i'll keep going. no matter what it takes. we'll see where we go, but we'll never know if we don't try. hmm...what else do i say? there isn't much time left. five minutes, really. what else, what else. you must be tired of clicking that button. hell, you might not be reading this properly anymore. but that's alright. it's okay - everything's okay...i hope. i really, really do. no matter what happens, i got you. okay? i hope you have me, too. haha...what kind of a letter is this? so one-sided. i know you won't - you can't respond. but. i'm here. always remember that. love, [xxx] - make the use of those 24 hours :)";
 const words = fullLetter.split(" ");
 let revealedCount = 0;
 
@@ -10,7 +10,7 @@ const PULSE_DURATION = 2000;
 const REVEAL_DELAY = Math.floor(PULSE_DURATION * 0.10);
 
 function revealWords() {
-  const n = Math.floor(Math.random() * 3) + 1;
+  const n = Math.floor(Math.random() * 10) + 1;
   revealedCount = Math.min(revealedCount + n, words.length);
   letterElem.textContent = words.slice(0, revealedCount).join(" ");
 }
