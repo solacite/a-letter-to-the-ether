@@ -1,23 +1,14 @@
 <!DOCTYPE html>
-
-<head>
-    <meta charset="utf-8">
-    <title>a letter to the ether</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <h1>a letter to the ether</h1>
-    <p>idk yoppee
-        anyway
-    </p>
-
-    <!-- id is for javascript to find element, label tells what the button does to screen reader -->
-    <button id="pulse-btn" aria-label="pulse screen">wake up.</button>
-    <!-- full-screen overlay for flash, hidden bc it's deco -->
-    <div id="pulse-overlay" aria-hidden="true"></div>
-
-    <script src="renderer.js"></script>
-</body>
-
+<html>
+    <head>
+        <title>a letter to the ether</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>a letter to the ether</h1>
+        <button id="wake-btn">wake up</button>
+        <p id="letter"></p>
+        <div id="pulse-overlay" aria-hidden="true"></div>
+        <script src="renderer.js"></script>
+    </body>
 </html>
